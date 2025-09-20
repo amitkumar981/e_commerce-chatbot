@@ -48,8 +48,8 @@ class CustomLogger:
         
         return structlog.get_logger(logger_name)
     
-    #test
-if __name__ =="__main__":
-    logger = CustomLogger().get_logger(__file__)
-    logger.info("Test log message",user_id =123,filename="report.pdf")
-    logger.error("Test error message", user_id =123,error="file not found")
+#     #test
+# if __name__ =="__main__":
+#     logger = CustomLogger().get_logger(__file__)
+#     logger.info("Test log message",user_id =123,filename="report.pdf")
+#     logger.error("Test error message", user_id =123,error="file not found")
