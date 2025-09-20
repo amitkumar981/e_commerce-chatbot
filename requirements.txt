@@ -5,8 +5,8 @@ jinja2
 langchain
 langchain-astradb
 langchain_core
-langchain-google-genai
-langchain-groq
+langchain_google_genai
+langchain_groq
 langchain_openai
 lxml
 python-dotenv
