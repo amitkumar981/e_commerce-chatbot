@@ -1,0 +1,30 @@
+astra_db:
+  collection_name: "ecommerce_data"
+
+embedding_model:
+  provider: 'openai'
+  model_name: 'text-embedding-3-small'
+
+retriever: 
+  top_k: 10
+
+llm:
+  openai:
+    provider: 'openai'
+    model_name: 'gpt-4o-mini'
+    temprature: 0
+    max_output_token: 2048
+  
+  groq:
+    provider: 'groq'
+    model_name: 'deepseek-r1-distill-llama-70b'
+    temprature: 0
+    max_output_token: 2048
+
+  google:
+    provider: 'google'
+    model_name: 'gemini-2.0-flash'
+    temprature: 0
+    max_output_token: 2048
+
+    
