@@ -3,8 +3,8 @@ name = "eccom-prod-assistant"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [langchain  ]
+requires-python = ">=3.10"
+dependencies = []
 
 [tool.setuptools.packages.find]
 include = ["prod_assistant"]
