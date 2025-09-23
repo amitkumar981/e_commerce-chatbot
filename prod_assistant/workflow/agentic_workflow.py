@@ -51,7 +51,7 @@ class AgenticRAG:
             )
             chain = prompt | self.llm | StrOutputParser()
             response = chain.invoke({"question": last_message})
-            return {"messages": [HumanMessage(content = response.content)]}
+            return {"messages": [HumanMessage(content = response)]}
     
     def _vector_retriever(self,state: AgenticState):
         print("calling vector_retriever... ")
