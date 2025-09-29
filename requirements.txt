@@ -18,3 +18,7 @@ uvicorn
 structlog
 langgraph
 ragas
+mcp
+langchain-mcp-adapters
+ddgs
+

@@ -1,5 +1,7 @@
 import os
 from langchain_astradb import AstraDBVectorStore
+from langchain.retrievers.document_compressors import LLMChainFilter
+from langchain.retrievers import ContextualCompressionRetriever
 from typing import List
 from langchain_core.documents import Document
 from  prod_assistant.utils.config_loader import load_config
