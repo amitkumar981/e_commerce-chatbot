@@ -8,7 +8,8 @@ async def main():
             "args": [
                 r"C:\Users\redhu\OneDrive\Desktop\eccom_prod_assistant\prod_assistant\mcp_servers\server.py"
             ],
-            "transport": "stdio"
+            "transport": "streamable-http",
+            "url": "http://localhost:8000/mcp"
         }
     })
     

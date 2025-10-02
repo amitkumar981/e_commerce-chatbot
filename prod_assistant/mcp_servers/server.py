@@ -33,6 +33,7 @@ async def get_product_info(query: str):
         context = format_docs(docs)
         if not context.strip():
             return "No context found"
+        return context
     except Exception as e:
         return f"error in retrieving product info {e}"
     
@@ -45,7 +46,7 @@ async def search_web(query: str):
         return f"error in searching web {e}"
 
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    mcp.run(transport='streamable-http')
     
     
         
